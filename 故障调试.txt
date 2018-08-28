@@ -1,0 +1,11 @@
+jstack -l TOMCAT_ID > jstack_20180808.log
+
+pringtf '%x' 22323 // 打印22323的16进制  22323为tomcat子进程的pid
+
+jmap -histo 15272 > jmap.histo.201808
+
+jmap -dump:format=b,file=/home/tomcat/jmap.dump TOMCAT_ID
+
+lsof -p 进程id | grep 'CLOSE_WAIT' | wc -l 查看句柄
+
+lsof -p 进程id  | wc -l  查看句柄

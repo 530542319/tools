@@ -1,0 +1,4 @@
+traceroute 用于追踪数据包在网络上的传输时的全部路径  ex: traceroute www.baidu.com
+nslookup 查看dns  ex: nslookup www.baidu.com
+nmap 扫描主机端口 ex:nmap -A 192.168.66.84
+ip route list table main  查看路由表配置信息
